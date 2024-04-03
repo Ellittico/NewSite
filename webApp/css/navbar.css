@@ -1,0 +1,81 @@
+.profile{
+    border-radius: 50%;
+    height: 40px;
+    width:40px;
+    background-image: url("/img/UserDefault.jpg");
+    background-size: cover;
+    padding: 0px;
+	margin:5px;
+}
+.is-logo:hover{
+	background-color:#14161a;
+}
+@media screen and (min-width:1024px) {
+.is-logo{
+	padding: 2px;
+	padding-right: 10px;
+	padding-left: 30px;
+}
+.button{
+	margin-right: 20px;
+	margin-top: 15px;
+}
+}
+.container{
+	width: 100%;
+	height: 100%;
+	float: right;
+	justify-items: right;
+	z-index: 1;
+	padding: 0px;
+}
+.user-photo{
+	border-radius:40px;
+	height:80px;
+	width: 80px;
+	background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwGsNv23K5shKblMsKePA8o6M2kqBH39PZqA&s);
+	background-size: cover;
+	margin: auto;
+}
+.side-menu{
+	display: none;
+	background-color:#222731;
+	width:200px;
+	height: 335px;
+	position: fixed;
+	top:3.5rem;
+	right: 20px;
+	float: right;
+	justify-self: right;
+	margin-top: 0px;
+	margin-right: 25px;
+	border-radius: 20px 0px 20px 20px;
+	padding:20px;
+}
+.element-side{
+	border-bottom:1px solid #2f3748 ;
+	padding-left: 10px ;
+	margin-bottom: 4px;
+	padding-bottom: 4px;
+}
+.navbar{
+	height: 3.5rem;
+}
+.is-rainbow{
+	margin-top:20px;
+	margin-left: 35px;
+	height: 30px;
+	background: rgb(178,34,34);
+	background: linear-gradient(305deg, rgba(178,34,34,1) 0%, rgba(241,130,56,1) 27%, rgba(139,56,241,1) 80%, rgba(239,56,241,1) 90%);
+}
+.hover-effect{
+	margin: 10px;
+	text-decoration: solid;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	font-weight: 200;
+}
+.name-profile{
+	margin-top: 10px;
+	text-align: center;
+}

@@ -1,0 +1,68 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Protest+Revolution&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap');
+
+.signUp-display{
+    background-color:#ffffff;
+    width: 100%;
+    height: 500px;
+    border-radius: 20px 0px 0px 20px;
+    display: none;
+}
+.logo-signup-display{
+    background: rgb(178,34,34);
+    background: linear-gradient(305deg, rgba(178,34,34,1) 0%, #f18238 100%);
+    width: 100%;
+    height: 500px;
+    border-radius: 0px 20px 20px 0px;
+    display: none;
+}
+.title-signUp{
+    font-family: "Protest Revolution", sans-serif;
+    text-align: center;
+    margin-top: 50px;
+    font-size: xxx-large;
+    color: #fcf1aa;
+    filter: drop-shadow(1px 3px 4px rgba(0, 0, 0, 0.505));
+    font-weight: normal;
+    margin-bottom: 0px;
+}
+.info-signUp{
+    font-family: "Protest Revolution", sans-serif;
+    font-weight: lighter;
+    color: #e7d1b0eb;
+    text-align: center;
+    filter: drop-shadow(1px 2px 3px rgba(0, 0, 0, 0.505));
+}
+.title-signup-info{
+    margin-bottom:20px;
+}
+.message-info{
+    margin-top: 10px;
+    font-size: small;
+    margin-left:80px;
+    font-family: 'Protest Riot', sans-serif;
+    color: #df0e0e;
+    margin-bottom:0px;
+    color:rgba(0, 0, 0, 0.584);
+    display: none;
+}
+.img-icons:hover{
+    cursor:grab;
+}
+@media only screen and (max-width:900px){
+    .logo-signup-display{
+        display: none !important;
+    }
+    .signUp-display{
+        padding-top:5px ;
+        border-radius: 20px;
+        height: 600px;
+    }
+    .message-info{
+        display: block;
+    }
+    .submit-button{
+        margin-top: 30px;
+    }
+}

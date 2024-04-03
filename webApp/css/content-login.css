@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap');
+
+
+.container{
+    vertical-align: middle;
+    justify-self: center;
+    width: 900px;
+    height: 500px;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display:grid;
+    grid-template-columns: 50% 50%;
+    border-radius: 20px;
+    box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.279);
+}
+.logo-display{
+    background: rgb(178,34,34);
+    background: linear-gradient(305deg, rgba(178,34,34,1) 0%, #f18238 100%);
+    width: 100%;
+    height: 500px;
+    border-radius: 20px 0px 0px 20px;
+}
+.info-display{
+    background-color:#ffffff;
+    height: 500px;
+    border-radius: 0px 20px 20px 0px;
+}
+@keyframes info-log-signUp-an {
+    from{height:0%;}
+    to{height: 510px;}
+}
+@keyframes info-log-sign-an {
+    from{height:0%;}
+    to{height: 500px;}
+}
+@keyframes info-log-an {
+    from{width:100%}
+    to{width:0%}
+}
+.img-logo{
+    position: relative;
+    width: 100%;
+    height: max-content;
+    top:25%;
+    filter:drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.126))
+}
+.title{
+    margin:45px;
+    margin-left: 80px;
+    font-size: xx-large;
+    font-family: 'Protest Riot', sans-serif;
+    color: #b22222;
+}
+.labels{
+    font-size: medium;
+    margin-left:80px;
+    font-family: 'Protest Riot', sans-serif;
+    color: #b22222a6;
+    margin-bottom:0px;
+}
+.input-login:focus-visible{
+    outline:none;
+}
+.input-login{
+    height: 30px;
+    margin-left:75px;
+    margin-bottom:20px;
+    width:65%;
+    border:none;
+    border-image: linear-gradient(#f6b73c, #b22222a6) 20;
+    border-width: 2px;
+    border-bottom-style: solid;
+    font-family: 'Protest Riot', sans-serif;
+    transition: all 0.5s ease-in
+}
+.input-login:hover {
+    border-image: linear-gradient(#ecbf67, #f18238) 30;
+}
+.img-icons{
+    position:relative;
+    top:10px;
+    right: 35px;
+    height:35px;
+    width:35px;
+}
+.submit-button{
+    justify-self: center;
+    text-align: center;
+    height: 45px;
+    width:170px;
+    margin: auto;
+    border-radius: 20px;
+    background: linear-gradient(305deg, #b22222 0%, #f18238 100%);
+    color:aliceblue;
+    font-size: large;
+    font-family: 'Protest Riot', sans-serif;
+    border: none;
+    transition: all 2s cubic-bezier(0.94,-0.12, 1, 1);
+}
+.submit-button:hover{
+    background: linear-gradient(305deg, #f18238  50%, #f1d538 100%);
+}
+.button-container{
+    margin:auto;
+    margin-top:30px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: 'Protest Riot', sans-serif;
+}
+.info-text{
+    color:#b2222284;
+    font-size: small;
+}
+.message-invalid{
+    margin-top: 0px;
+    font-size: small;
+    margin-left:80px;
+    font-family: 'Protest Riot', sans-serif;
+    color: #df0e0e;
+    margin-bottom:0px;
+    display: none;
+}
+.info-link{
+    color:#b22222;
+    transition: all 0.5s ease-in;
+}
+.info-link:hover{
+    color:#f18238;
+}
+.info-text-signUp{
+    color:aliceblue;
+    font-family: 'Protest Riot', sans-serif;
+    font-weight: lighter;
+    text-align: center;
+}
+.info-button{
+    height: 45px;
+    width:170px;
+    border-radius: 10px;
+    border: none;
+    font-size: large;
+    font-family: 'Protest Riot', sans-serif;
+    color:#b22222;
+}
+.info-button:hover{
+    color:white;
+    background: linear-gradient(305deg, #f18238, #f1d538 );
+}
+.SignUp-mobile-device{
+    display:none;
+    text-align: center;
+    font-family: 'Protest Riot', sans-serif;
+}
+.hr-mobile{
+    width: 300px;
+}
+.submit-button-mobile-device{
+    background-color: transparent;
+    height: 45px;
+    width:170px;
+    border-radius: 20px;
+    font-size: large;
+    font-family: 'Protest Riot', sans-serif;
+    color:#b22222;
+    background: 
+    linear-gradient(#fff, #fff) padding-box,
+    linear-gradient(305deg, #b22222 0%, #f18238 100%) border-box;
+    border: 3px solid transparent;
+    transition: all 0.5s ease-in;
+}
+.submit-button-mobile-device:hover{
+    background: 
+    linear-gradient(#fff, #fff) padding-box,
+    linear-gradient(305deg, #f18238 0%, #f1d538 100%) border-box;
+    color:#f18238;
+}
+@media only screen and (max-width:900px){
+    .logo-display{
+        display: none;
+    }
+    .container{
+        display: block;
+        width:380px;
+        height: 600px;
+    }
+    .info-display{
+        border-radius:20px;
+        padding-top:15px;
+        width: 380px;
+        height: 600px;
+    }
+    .SignUp-mobile-device{
+        display: block;
+    }
+    .button-container{
+        margin-top: 20px;
+    }
+    
+}

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Login page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/css/login-background.css">
+    <link rel="stylesheet" type="text/css" href="/css/content-login.css">
+    <link rel="stylesheet" type="text/css" href="/css/signup-content.css">
+</head>
+<body class="is-marginless">
+    <div class="container" id="container">
+        <div class="logo-display"  id="logo-id-login">
+            <div class="LogoLog">
+                <img src="/img/logo.png" class="img-logo">
+            </div>
+            <p class="info-text-signUp LogoLog">If you haven't an account..</p>
+            <div style="justify-content: center;
+            align-items: center;
+            text-align: center;margin:auto;">
+                 <button class="info-button LogoLog" onclick="changeContest()">Sign up</button>
+            </div>
+        </div>
+        <div class="info-display" id="info-id-login">
+            <p class="title Info">Sign In</p>
+            <p class="labels Info">Email address</p>
+            <div class="img-container Info">
+                <input class="input-login" type="email" placeholder="Enter email..." id="email-log">
+                <img class="img-icons" src="/img/email-icon.png" >
+                <p class="message-invalid"> &#9888; Invalid email address</p>
+            </div>
+            <p class="labels Info">Password</p>
+            <div class="img-container Info">
+                <input class="input-login" type="password" placeholder="Enter password..."  id="pass-log">
+                <img class="img-icons" src="/img/password-icon.png" onclick="swicthVision('3')">
+                <p class="message-invalid" id="invalid-credentials"> &#9888; User or password are invalid </p>                
+            </div>
+            <div class="button-container Info">
+                <button class="submit-button" onclick=sendInfotoCheck() >Submit</button>
+                <p class="info-text">Forget password? <a class="info-link"href="#">click here</a></p>
+            </div>
+            <div class="SignUp-mobile-device Info">
+                <hr class="hr-mobile">
+                <p class="info-text" style="margin-top: 25px;">if you haven't an account..</p>
+                <button class="submit-button-mobile-device" onclick="changeContestMobile()"> Sign Up</button>
+            </div>
+        </div>
+        <div class="signUp-display" id="signUp-display">
+            <p class=" title title-signup-info Sign">Sign Up</p>
+            <p class="labels Sign">Email address</p>
+            <div class="img-container Sign">
+                <input class="input-login" type="email" placeholder="Enter email..." id="email">
+                <img class="img-icons" src="/img/email-icon.png" >
+                <p class="message-invalid " id="invalid-email"> &#9888; Invalid email address</p>
+            </div>
+            <p class="labels Sign">Password</p>
+            
+            <p class="message-info " id="info-message"> Password must contain:<br>
+                &#x2022; at least 16 character, <br>
+                &#x2022; 2 numbers <br>
+                &#x2022; 1 special character</p>
+            <div class="img-container Sign">
+                <input class="input-login" type="password" placeholder="Enter password..." id="pass1">
+                <img class="img-icons" src="/img/password-icon.png" onclick="swicthVision('1')">
+                <p class="message-invalid" style="margin-right: 60px;" id="invalid-password"> &#9888; Password must contain at least 16 character, 2 numbers and 1 special character</p>                
+            </div>
+            <div class="img-container Sign">
+                <input class="input-login" type="password" placeholder="Repeat password..." id="pass2">
+                <img class="img-icons" src="/img/password-icon.png" onclick="swicthVision('2')">
+                <p class="message-invalid" id="invalid-match"> &#9888; User and password don't correspond</p>
+                <p class="message-invalid" id="invalid-session"> &#9888; Invalid Session </p>                  
+            </div>
+            <div class="button-container Sign" id="button-container">
+                <button class="submit-button" onclick="chechInfoSub()">Submit</button>
+            </div>
+        </div>
+        <div class="logo-signup-display " id="logo-signup-display">
+            <h1 class="title-signUp Logo"> Welcome!</h1>
+            <div>
+                <img src="/img/logo.png" class="img-logo Logo">
+            </div>
+            <p class="info-signUp Logo"> Thank you for choosing us </p>
+        </div>
+    </div>
+</body>
+<script src="/js/change-contest.js"></script>
+<script src="/js/check-info.js"></script>
+<script src="/js/password.js"></script>
+</html>
