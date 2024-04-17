@@ -88,7 +88,30 @@
     imageView.style.backgroundImage = `url(${imgLink})`;
     imageView.textContent = "";
     imageView.style.border = 0;
+
+    let file = inputFile.files[0];
+   /* const formData = new FormData();
+        formData.append("image", file);
+        formData.append("save-path", "C:\Users\elisa\Documents\GitHub\NewSite\webApp\img");
+
+        fetch("/save-image", {
+            method: "POST",
+            body: formData
+        })
+        .then(response => response.text())
+        .then(data => {
+            console.log("Immagine salvata con successo:", data);
+        })
+        .catch(error => {
+            console.error("Errore durante il salvataggio dell'immagine:", error);
+        });*/
+    /*let a = document.createElement('a');
+    a.href = imgLink;
+    a.download = file.name;
+    a.click();*/
   }
+
+  
 
   dropArea.addEventListener("dragover", function(e){
     e.preventDefault();
@@ -99,9 +122,8 @@
     inputFile.files = e.dataTransfer.files;
     uploadImage();
   })
-  window.onbeforeunload = function() {
-  return "Are you sure you want to leave? There may be unsaved changes.";
-};
+
+
 </script>
 </body>
 </html>
