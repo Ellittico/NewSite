@@ -6,3 +6,4 @@ function swicthVision(str){
         x.type = "password";
     }
 }
+

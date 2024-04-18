@@ -60,15 +60,12 @@
                 &#x2022; 2 numbers <br>
                 &#x2022; 1 special character</p>
             <div class="img-container Sign">
-                <input class="input-login" type="password" placeholder="Enter password..." id="pass1">
+                <input class="input-login" type="password" placeholder="Enter password..." id="pass1" oninput="checkPasswordStrength()">
                 <img class="img-icons" src="/webApp/img/password-icon.png" onclick="swicthVision('1')">
                 <p class="message-invalid" style="margin-right: 60px;" id="invalid-password"> &#9888; Password must contain at least 16 character, 2 numbers and 1 special character</p>                
             </div>
             <div class="img-container Sign">
-                <input class="input-login" type="password" placeholder="Repeat password..." id="pass2">
-                <img class="img-icons" src="/webApp/img/password-icon.png" onclick="swicthVision('2')">
-                <p class="message-invalid" id="invalid-match"> &#9888; User and password don't correspond</p>
-                <p class="message-invalid" id="invalid-session"> &#9888; Invalid Session </p>                  
+                <div id="strength-meter"></div>      
             </div>
             <div class="button-container Sign" id="button-container">
                 <button class="submit-button" onclick="chechInfoSub()">Submit</button>

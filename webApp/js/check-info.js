@@ -43,6 +43,43 @@ function containsSpecialChars(str) {
     return specialChars.test(str);
 }
 
+
+function checkPasswordStrength() {
+    var password = document.getElementById('pass1').value;
+    var meter = document.getElementById('strength-meter');
+
+    var strength = 0;
+    if (password.match(/[a-zA-Z0-9]+/)) {
+        strength += 1;
+    }
+    if (password.match(/[~!@#$%^&*()_+{}|:"<>?`\-=[\]\\';,./]/)) {
+        strength += 1;
+    }
+    if (password.length > 8) {
+        strength += 1;
+    }
+
+    switch (strength) {
+        case 0:
+            meter.className = 'strength-weak';
+            meter.style.width = '0px';
+            break;
+        case 1:
+            meter.className = 'strength-weak';
+            meter.style.width = '100px';
+            break;
+        case 2:
+            meter.className = 'strength-medium';
+            meter.style.width = '200px';
+            break;
+        case 3:
+            meter.className = 'strength-strong';
+            meter.style.width = '300px';
+            break;
+    }
+}
+
+
 function sendInfotoCheck(){ 
     var emailLog = document.getElementById("email-log").value;
     var passLog = document.getElementById("pass-log");
