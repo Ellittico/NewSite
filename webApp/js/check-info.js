@@ -62,18 +62,22 @@ function checkPasswordStrength() {
     switch (strength) {
         case 0:
             meter.className = 'strength-weak';
+            document.getElementById("strength-meter-text").innerText=""
             meter.style.width = '0px';
             break;
         case 1:
             meter.className = 'strength-weak';
+            document.getElementById("strength-meter-text").innerText="Weak password"
             meter.style.width = '100px';
             break;
         case 2:
             meter.className = 'strength-medium';
+            document.getElementById("strength-meter-text").innerText="Medium password"
             meter.style.width = '200px';
             break;
         case 3:
             meter.className = 'strength-strong';
+            document.getElementById("strength-meter-text").innerText="Strong password"
             meter.style.width = '300px';
             break;
     }

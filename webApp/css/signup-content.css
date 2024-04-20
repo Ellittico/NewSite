@@ -66,11 +66,16 @@
         margin-top: 30px;
     }
 }
+#strength-meter-text{
+  text-align: center;
+  font-family: 'Protest Riot', sans-serif;
+  font-weight: lighter;
+  color: #cd6f6f;
+}
 #strength-meter {
     height: 10px;
     margin-top: 10px;
     margin-left: 73px;
-
     border-radius: 10px;
     transition: 0.5s;
 }
