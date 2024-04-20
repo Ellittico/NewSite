@@ -203,3 +203,14 @@
     }
     
 }
+@media only  screen and (max-width:380px){
+    .container{
+        border-radius: 0px !important;
+    }
+    .info-display{
+        border-radius: 0px !important;
+    }
+    .signUp-display{
+        border-radius: 0px !important;
+    }
+}
