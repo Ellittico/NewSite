@@ -83,7 +83,57 @@ function checkPasswordStrength() {
     }
 }
 
+var xhr = new XMLHttpRequest();
+xhr.open('POST', 'file_php.php', true);
+xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+xhr.onreadystatechange = function () {
+    if (xhr.readyState == 4 && xhr.status == 200) {
+        // Risposta ricevuta dal server PHP
+        console.log(xhr.responseText);
+    }
+};
+xhr.send('parametro1=valore1&parametro2=valore2');
 
+function sendInfotoCheck(){
+    // JavaScript
+    var xhr = new XMLHttpRequest();
+    xhr.open('POST', 'file_php.php', true);
+    xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+    xhr.onreadystatechange = function () {
+        if (xhr.readyState == 4 && xhr.status == 200) {
+            // Risposta ricevuta dal server PHP
+            console.log(xhr.responseText);
+        }
+    };
+    xhr.send('parametro1=valore1&parametro2=valore2');
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
 function sendInfotoCheck(){ 
     var emailLog = document.getElementById("email-log").value;
     var passLog = document.getElementById("pass-log");
@@ -174,4 +224,4 @@ function sendInfo2(){
     }
     xhr.open('get', '/xml-setting/Exchange.xml', true);
     xhr.send();
-}
+}*/
