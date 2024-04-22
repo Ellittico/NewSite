@@ -4,15 +4,15 @@
     <title>Login page</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="/webApp/css/login-background.css">
-    <link rel="stylesheet" type="text/css" href="/webApp/css/content-login.css">
-    <link rel="stylesheet" type="text/css" href="/webApp/css/signup-content.css">
+    <link rel="stylesheet" type="text/css" href="./webApp/css/login-background.css">
+    <link rel="stylesheet" type="text/css" href="./webApp/css/content-login.css">
+    <link rel="stylesheet" type="text/css" href="./webApp/css/signup-content.css">
 </head>
 <body class="is-marginless">
     <div class="container" id="container">
         <div class="logo-display"  id="logo-id-login">
             <div class="LogoLog">
-                <img src="/webApp/img/logo.png" class="img-logo">
+                <img src="./webApp/img/logo.png" class="img-logo">
             </div>
             <p class="info-text-signUp LogoLog">If you haven't an account..</p>
             <div style="justify-content: center;
@@ -26,13 +26,13 @@
             <p class="labels Info">Email address</p>
             <div class="img-container Info">
                 <input class="input-login" type="email" placeholder="Enter email..." id="email-log">
-                <img class="img-icons" src="/webApp/img/email-icon.png" >
+                <img class="img-icons" src="./webApp/img/email-icon.png" >
                 <p class="message-invalid"> &#9888; Invalid email address</p>
             </div>
             <p class="labels Info">Password</p>
             <div class="img-container Info">
                 <input class="input-login" type="password" placeholder="Enter password..."  id="pass-log">
-                <img class="img-icons" src="/webApp/img/password-icon.png" onclick="swicthVision('3')">
+                <img class="img-icons" src="./webApp/img/password-icon.png" onclick="swicthVision('3')">
                 <p class="message-invalid" id="invalid-credentials"> &#9888; User or password are invalid </p>                
             </div>
             <div class="button-container Info">
@@ -50,7 +50,7 @@
             <p class="labels Sign">Email address</p>
             <div class="img-container Sign">
                 <input class="input-login" type="email" placeholder="Enter email..." id="email">
-                <img class="img-icons" src="/webApp/img/email-icon.png" >
+                <img class="img-icons" src="./webApp/img/email-icon.png" >
                 <p class="message-invalid " id="invalid-email"> &#9888; Invalid email address</p>
             </div>
             <p class="labels Sign">Password</p>
@@ -61,7 +61,7 @@
                 &#x2022; 1 special character</p>
             <div class="img-container Sign">
                 <input class="input-login" type="password" placeholder="Enter password..." id="pass1" oninput="checkPasswordStrength()">
-                <img class="img-icons" src="/webApp/img/password-icon.png" onclick="swicthVision('1')">
+                <img class="img-icons" src="./webApp/img/password-icon.png" onclick="swicthVision('1')">
                 <p class="message-invalid" style="margin-right: 60px;" id="invalid-password"> &#9888; Password must contain at least 16 character, 2 numbers and 1 special character</p>                
             </div>
             <div class="img-container Sign">
@@ -75,13 +75,13 @@
         <div class="logo-signup-display " id="logo-signup-display">
             <h1 class="title-signUp Logo"> Welcome!</h1>
             <div>
-                <img src="/webApp/img/logo.png" class="img-logo Logo">
+                <img src="./webApp/img/logo.png" class="img-logo Logo">
             </div>
             <p class="info-signUp Logo"> Thank you for choosing us </p>
         </div>
     </div>
 </body>
-<script src="/webApp/js/change-contest.js"></script>
-<script src="/webApp/js/check-info.js"></script>
-<script src="/webApp/js/password.js"></script>
+<script src="./webApp/js/change-contest.js"></script>
+<script src="./webApp/js/check-info.js"></script>
+<script src="./webApp/js/password.js"></script>
 </html>
